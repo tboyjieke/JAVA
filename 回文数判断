@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void reverseString(String s) {
+        char[] chars = s.toCharArray();
+        char[] chars1 = new char[s.length()];
+        int i,j;
+        for(i=0,j=chars.length-1;i<chars.length;i++,j--)
+        {
+            chars1[i]=chars[j];
+        }
+        String s1 = String.valueOf(chars1);
+        if(s1.equals(s))
+        {
+            System.out.println("是") ;
+        }else
+        {
+            System.out.println("不是") ;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        String s=input.next();
+        reverseString(s);
+
+    }
+}
