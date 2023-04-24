@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void sxh(int s) {
+        int i,j,n;
+        i=s%10;
+        j=(s/10)%10;
+        n=s/100;
+        if(Math.pow(i,3)+Math.pow(j,3)+Math.pow(n,3)==s)
+        {
+            System.out.print(s+" ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int i;
+        for(i=100;i<1000;i++)
+        {
+            sxh(i);
+        }
+
+    }
+}
